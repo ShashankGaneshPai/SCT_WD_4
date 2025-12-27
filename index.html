@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <h1>Daily Task Planner</h1>
+
+    <form id="taskForm">
+      <input type="text" id="taskText" placeholder="What do you need to do?" required>
+
+      <div class="row">
+        <input type="date" id="taskDate" required>
+        <input type="time" id="taskTime" required>
+      </div>
+
+      <select id="priority">
+        <option value="low">Low Priority</option>
+        <option value="medium">Medium Priority</option>
+        <option value="high">High Priority</option>
+      </select>
+
+      <button type="submit">Add Task</button>
+    </form>
+
+    <p class="counter">Total Tasks: <span id="taskCount">0</span></p>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
